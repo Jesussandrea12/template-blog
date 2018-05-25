@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html class="has-navbar-fixed-top">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Template Blog</title>
+    <link rel="stylesheet" href="assets/css/main.css">
+  </head>
+  <body>
+    <!-- navbar -->
+    <nav class="navbar is-transparent is-fixed-top">
+      <div class="navbar-brand">
+        <a class="navbar-item" href="https://bulma.io">
+          <img src="https://bulma.io/images/bulma-logo.png" alt="Bulma: a modern CSS framework based on Flexbox" width="112" height="28">
+        </a>
+        <div class="navbar-burger burger" data-target="navbarExampleTransparentExample">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+
+      <div id="navbarExampleTransparentExample" class="navbar-menu">
+        <div class="navbar-start">
+          <div class="navbar-item has-dropdown is-hoverable">
+            <a class="navbar-link" href="/documentation/overview/start/">
+              Introducción
+            </a>
+            <div class="navbar-dropdown is-boxed">
+              <a class="navbar-item" href="/documentation/overview/start/">
+                Personas
+              </a>
+              <a class="navbar-item" href="https://bulma.io/documentation/modifiers/syntax/">
+                Empresas
+              </a>
+              <a class="navbar-item" href="https://bulma.io/documentation/columns/basics/">
+                Desarrolladores
+              </a>
+              <a class="navbar-item" href="https://bulma.io/documentation/layout/container/">
+                Cómo empezar
+              </a>
+              <a class="navbar-item" href="https://bulma.io/documentation/form/general/">
+                Como funciona
+              </a>
+            </div>
+          </div>
+          <div class="navbar-item has-dropdown is-hoverable">
+            <a class="navbar-link" href="/documentation/overview/start/">
+              Recursos
+            </a>
+            <div class="navbar-dropdown is-boxed">
+              <a class="navbar-item" href="/documentation/overview/start/">
+                Recursos
+              </a>
+              <a class="navbar-item" href="https://bulma.io/documentation/modifiers/syntax/">
+                Comunidad
+              </a>
+              <a class="navbar-item" href="https://bulma.io/documentation/columns/basics/">
+                Vocabulario
+              </a>
+              <a class="navbar-item" href="https://bulma.io/documentation/layout/container/">
+                Eventos
+              </a>
+              <a class="navbar-item" href="https://bulma.io/documentation/form/general/">
+                Bitcoin Core
+              </a>
+            </div>
+          </div>
+          <a class="navbar-item" href="https://bulma.io/">
+            Innovación
+          </a>
+          <div class="navbar-item has-dropdown is-hoverable">
+            <a class="navbar-link" href="/documentation/overview/start/">
+              Participe
+            </a>
+            <div class="navbar-dropdown is-boxed">
+              <a class="navbar-item" href="/documentation/overview/start/">
+                Apoya Bitcoin
+              </a>
+              <a class="navbar-item" href="https://bulma.io/documentation/modifiers/syntax/">
+                Desarrollo
+              </a>
+            </div>
+          </div>
+          <a class="navbar-item" href="https://bulma.io/">
+            FAQ
+          </a>
+        </div>
+
+        <div class="navbar-end">
+          <div class="navbar-item">
+            <div class="field is-grouped">
+              <p class="control">
+                <a class="button is-info twitter" data-social-network="Twitter" data-social-action="tweet" target="_blank" href="https://twitter.com/intent/tweet?text=Bulma: a modern CSS framework based on Flexbox&amp;hashtags=bulmaio&amp;url=http://localhost:4000&amp;via=jgthms">
+                  <span class="icon">
+                    <i class="fab fa-twitter"></i>
+                  </span>
+                  <span>
+                    Tweet
+                  </span>
+                </a>
+              </p>
+              <p class="control">
+                <a class="button is-info facebook" href="https://github.com/jgthms/bulma/releases/download/0.7.1/bulma-0.7.1.zip">
+                  <span class="icon">
+                    <i class="fab fa-facebook-f"></i>
+                  </span>
+                  <span>Share</span>
+                </a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- hero -->
+    <section class="section">
+      <div class="container">
+        <div class="wrapper-bg">
+          <h1 class="title">Mejorando la seguridad de tu web con Cloudflare</h1>
+        </div>
+
+        <div class="wrapper">
+          <article>
+            <p>
+              Anteriormente tuvimos la oportunidad de aprender qué es <a href="#">Cloudflare</a>, así como sus principales características. Pudimos profundizar en cómo usar el sistema de Cache + CDN adecuadamente.
+              Ahora nos adentrarnos en otra de sus grandes cualidades, la Seguridad. Puntualmente sobre cómo mejorar la seguridad de nuestros sitios directamente desde las opciones que ofrece Cloudflare.
+            </p>
+
+            <h3>Características de Seguridad de <a href="#">Cloudflare</a></h3>
+            <p>Si bien Cloudflare ofrece muchísimas posibilidades y características referidas a la seguridad de los sitios, muchas de ellas están disponibles sólo para las cuentas Premium (pagas), por lo tanto trataré de ser práctico y comentar las cosas que puedes utilizar en la versión gratuita.</p>
+            <p>Todas estas recomendaciones las hacemos también a muchos de nuestros clientes en Infranetworking, y siempre con excelentes resultados. Comencemos.</p>
+
+            <h4>Bloquear el acceso a bots maliciosos</h4>
+            <p>El sistema de seguridad de Cloudflare permite bloquear bots maliciosos que van recorriendo Internet en busca de potenciales víctimas. Esto incluye spammers, bots de inyecciones de contenido o phishing.</p>
+            <p>Esta protección viene activada por defecto cuando la nube naranja de <em>Cloudflare</em> está activada, no necesitas hacer nada más que asegúrate de que Security Level esté en <strong>Medium</strong> o <strong>High</strong>.</p>
+            <p>Luego puedes ver el porcentaje de bots maliciosos se han detenido desde las estadísticas en el <em>apartado “Threats”:</em></p>
+            <img src="https://static.platzi.com/media/user_upload/Cloudflare_seguridad_1-fcf1058c-47ab-41cb-9b96-5bdfa3fc32d2.jpg" alt="Cloudflare">
+
+            <h3>Mitigar los ataques DDoS</h3>
+            <p>Te ayudará a proteger tus aplicaciones contra tráfico malicioso como floods, <strong>DOS</strong> y DDOS masivos. También podrás limitar el número de requests que llegan a determinados recursos de tu web, con el fin de frenar estos ataques.</p>
+            <p>El modo <strong>anti-DDOS</strong> te permitirá detener estos ataques usando análisis inteligente de patrones sospechosos como sistema operativo, navegador, tipo de petición, etc.</p>
+            <p>Sólo debes ir al apartado Security Level en el menú superior, luego seleccionar <strong>“I’m Under Attack”.</strong></p>
+            <p>Este modo bloqueará la mayoría de los ataques masivos de mediano porte. Si la cantidad de requests exceden el número permitido por la protección y se convierte en un ataque de proporciones grandes, seguramente te convendrá ir por un plan premium.</p>
+            <img src="https://static.platzi.com/media/user_upload/Cloudflare_seguridad_2-745c7c26-1c72-42a6-8141-ab6648cf0cd8.jpg" alt="Cloudflare">
+
+            <h4>Capa de seguridad de transporte SSL / TLS (TLS)</h4>
+            <p>El cifrado SSL permite que tu web pueda despachar conexiones vía HTTPS entre los visitantes y el servidor donde hospedes el contenido. Esto evita ataques a tu web, rastreo de información, sniffing de datos, te ayuda a mejorar posicionamiento web y además impacta en cómo tus clientes/visitas ven tu web al notar que es segura (candado verde en la barra de navegación).</p>
+            <p>Cloudflare ofrece varios tipos de SSL, Flexible SSL, Full o Full Strict. El gratuito emitido por Cloudflare es Flexible SSL y es el que te recomendamos si no tienes un certificado SSL en tu servidor de origen.</p>
+
+            <iframe src="https://www.youtube.com/embed/T47T_mG7YbU" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+            <h3>¿Cómo activar mi certificado SSL emitido por Cloudflare?</h3>
+            <p>Si ya tienes otro certificado corriendo en el origen, necesitas activar Full Strict. De esta manera Cloudflare puede crear el túnel SSL usando tu encriptación original y no la de su red.</p>
+            <small>Its a secret, Don't tell anyone</small>
+            <a class="btn button is-link is-large" href="https://google.com">Go to Google</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="content has-text-centered">
+          <p>
+            <strong>Template</strong> by <a href="https://jesussandrea.com">Jesus Sandrea</a> ❤️ The source code is licensed
+            <a href="http://opensource.org/licenses/mit-license.php">MIT</a>. The website content
+            is licensed <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY NC SA 4.0</a>.
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.min.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+
+    <script type="text/javascript">
+      document.addEventListener('DOMContentLoaded', function () {
+        // Get all "navbar-burger" elements
+        var $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+
+        // Check if there are any navbar burgers
+        if ($navbarBurgers.length > 0) {
+
+          // Add a click event on each of them
+          $navbarBurgers.forEach(function ($el) {
+            $el.addEventListener('click', function () {
+
+              // Get the target from the "data-target" attribute
+              var target = $el.dataset.target;
+              var $target = document.getElementById(target);
+
+              // Toggle the class on both the "navbar-burger" and the "navbar-menu"
+              $el.classList.toggle('is-active');
+              $target.classList.toggle('is-active');
+
+            });
+          });
+        }
+
+      });
+    </script>
+  </body>
+</html>

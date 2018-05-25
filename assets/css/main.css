@@ -1,0 +1,155 @@
+/* lib */
+/* Headings */
+.huge, .large, .bigger, .big,
+h1, h2, h3, h4, h5, h6 {
+  font-weight: bold;
+  text-shadow: 0 2px 0 rgba(0, 0, 0, .07);
+}
+.wrapper h1 {
+  font-size: calc(30px + 24 * ((100vw - 420px) / 860));
+  line-height: 1.05;
+  margin: 1em 0;
+}
+.wrapper h2 {
+  font-size: calc(24px + 18 * ((100vw - 420px) / 860));
+  line-height: 1.14;
+  margin: 1em 0;
+}
+.wrapper h3 {
+  font-size: calc(22px + 4 * ((100vw - 420px) / 860));
+  text-align: left;
+  font-weight: bold;
+  line-height: 1.38;
+  margin: 1em 0;
+}
+.wrapper h4 {
+  font-size: calc(18px + 4 * ((100vw - 420px) / 860));
+  line-height: 1.38;
+  margin: 1em 0;
+  font-weight: bold;
+}
+.wrapper small {
+  font-size: calc(14px + 2 * ((100vw - 420px) / 860));
+  line-height: 1.2;
+}
+.wrapper .btn {
+  display: table;
+  margin: 2em auto !important;
+}
+/* Basic Text Style */
+hr {
+  border: solid #ddd;
+  border-width: 1px 0 0;
+  clear: both;
+  margin: 10px 0 30px;
+  height: 0;
+}
+.wrapper img {
+  display: block;
+  margin: 3em auto;
+}
+.wrapper p {
+  margin: 1em 0;
+  font-size: 1.2em;
+}
+iframe {
+  display: block;
+  margin: 3em auto !important;
+  width: 560px;
+  height: 315px;
+}
+/* Reduce margins */
+/* layout */
+/* navbar */
+.button.is-info.facebook {
+  background: #4267b2;
+}
+.button.is-info.facebook:hover {
+  background: #2d53a2;
+}
+.button.is-info.twitter {
+  background: #1b95e0;
+}
+.button.is-info.twitter:hover {
+  background: #1c88cb;
+}
+body {
+  background-color: whitesmoke;
+}
+.wrapper {
+  width: 90%;
+  max-width: 1100px;
+  margin: 3em auto;
+  padding: 2em;
+  background: #fafafa;
+}
+article {
+  margin: 1em 2em;
+}
+.wrapper-bg {
+  background: url('../img/mejorando_cloudflare_seguridad.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 5em;
+  text-align: center;
+}
+.wrapper-bg h1 {
+  color: white;
+}
+@media screen and (min-width: 1280px) {
+  .wrapper h1 {
+    font-size: 54px;
+  }
+  .wrapper h2 {
+    font-size: 42px;
+  }
+  .wrapper h3 {
+    font-size: 26px;
+  }
+  .wrapper h4 {
+    font-size: 22px;
+  }
+  .wrapper small {
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 420px) {
+  .wrapper h1 {
+    font-size: 30px;
+  }
+  .wrapper h2 {
+    font-size: 24px;
+  }
+  .wrapper h3 {
+    font-size: 22px;
+  }
+  .wrapper h4 {
+    font-size: 18px;
+  }
+  .wrapper small {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  iframe {
+    display: block;
+    margin: 3em auto !important;
+    width: auto;
+    height: auto;
+  }
+}
+@media screen and (max-width: 500px) {
+  .wrapper {
+    width: 100%;
+    padding: 0;
+    padding-top: 1em;
+  }
+  .wrapper-bg {
+    padding: 4em 1em;
+  }
+  article {
+    margin: 1em;
+    padding-bottom: 3em;
+  }
+}

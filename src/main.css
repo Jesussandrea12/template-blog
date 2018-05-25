@@ -1,0 +1,6 @@
+/* lib */
+@import "./lib/variables.css";
+@import "./lib/typography.css";
+
+/* layout */
+@import "./layout/page.css";
