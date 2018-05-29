@@ -33,10 +33,11 @@ article {
 }
 
 .wrapper-bg {
-  background: url('../img/mejorando_cloudflare_seguridad.jpg');
-  background-size: cover;
+  /* background: linear-gradient(135deg, #159932 0%, #10994f 48%,#2cb0cd 100%); */
+  background: hsl(217, 71%, 53%);
+  /* background-size: cover;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: center; */
   padding: 5em;
   text-align: center;
 
